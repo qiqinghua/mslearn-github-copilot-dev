@@ -115,6 +115,16 @@ Use the following steps to set up the library application:
     ```bash
     python -m unittest discover tests
     ```
+
+    python：调用 Python 解释器。
+
+-m unittest：以脚本方式运行 unittest 模块，使其作为主程序入口。
+
+discover：是 unittest 的一个子命令，用于自动发现测试模块。它会递归搜索指定目录下所有符合命名模式（默认是 test*.py）的文件，并加载其中的测试用例。
+
+tests：指定了要搜索的起始目录。这里即为当前目录下的 tests 文件夹。
+
+执行该命令后，unittest 会在 tests 及其子目录中查找所有以 test 开头的 Python 文件，并运行其中定义的测试（继承自 unittest.TestCase 的类及其以 test 开头的方法）。这是一种常见的批量运行测试的方式，无需手动列出每个测试文件。
     unittest 并不是开发者自己编写的模块，而是 Python 标准库中的一个内置模块，专门用于编写和运行单元测试。它提供了测试用例组织、断言方法、测试运行器等基础设施，类似于 Java 中的 JUnit。
 
 因为它是标准库的一部分，所以安装 Python 后就可以直接使用，无需通过 pip 额外安装。开发者只需 import unittest 即可在自己的测试代码中利用它。
