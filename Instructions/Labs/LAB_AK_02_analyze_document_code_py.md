@@ -115,6 +115,12 @@ Use the following steps to set up the library application:
     ```bash
     python -m unittest discover tests
     ```
+    unittest 并不是开发者自己编写的模块，而是 Python 标准库中的一个内置模块，专门用于编写和运行单元测试。它提供了测试用例组织、断言方法、测试运行器等基础设施，类似于 Java 中的 JUnit。
+
+因为它是标准库的一部分，所以安装 Python 后就可以直接使用，无需通过 pip 额外安装。开发者只需 import unittest 即可在自己的测试代码中利用它。
+
+如果你在命令行中执行 python -m unittest，Python 就会将 unittest 模块当作脚本来运行，从而启动测试发现或执行指定的测试。
+
 
     You'll see some Warnings, but there shouldn't be any Errors.
 
