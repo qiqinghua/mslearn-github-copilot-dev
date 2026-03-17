@@ -132,7 +132,7 @@ tests：指定了要搜索的起始目录。这里即为当前目录下的 tests
 如果你在命令行中执行 python -m unittest，Python 就会将 unittest 模块当作脚本来运行，从而启动测试发现或执行指定的测试。
 
 
-    You'll see some Warnings, but there shouldn't be any Errors.
+You'll see some Warnings, but there shouldn't be any Errors.
 
 ## Use GitHub Copilot to explain the library application codebase
 
